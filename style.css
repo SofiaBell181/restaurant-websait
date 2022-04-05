@@ -1,0 +1,803 @@
+
+body {
+    margin: 0;
+    background-color: #ffffffea;
+    -webkit-font-smoothing: antialiased; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+    background-color:#3c342f;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sakhli {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: white;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-right: auto;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.sakhli:hover {
+    color: white;
+}
+
+.list_mobile {
+    border: none;
+    background-color: transparent;
+    display: none;
+    margin-top: 5px;
+}
+
+.menu {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color .2s linear;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    line-height: 1em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu:hover {
+    color: #00bdbdd8;
+    } 
+
+#content {
+    background-image: url('food.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.mission {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.georgian, .georgianTwo, .georgianThree { 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+  
+.prg {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: .1em;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    line-height: 1.7em;
+}
+
+.shef {
+    padding: 40px 0;
+    background-color: #ffffffea;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+        
+.shef img {
+    filter: grayscale(100%);
+}
+
+.cook {
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.5em;
+    text-align: left;
+    color: #1f0000;
+}
+
+#tbilisi {
+    height: 40vh;
+    background-image: url('Georgian\ mountain.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUs {
+    background-color: #ffffffea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header {
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 41px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    }
+    
+.cafe_par {
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.8em;
+    text-align: center;
+    margin: 0 80px;
+}
+
+#contact {
+    height: 30vh;
+}
+
+.contactAll {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#contact_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 250px;
+    flex: 1;
+    padding-top: 60px;
+}
+
+#contact_inner li {
+    list-style: none;
+}
+
+.contact {
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.5em; 
+    text-decoration: none;
+}
+
+.contact:hover {
+    color: #fff;
+}
+
+.list, .listTwo {
+    padding-left: 0;
+}
+
+.list li {
+    transition: .8s;
+}
+
+.list li:hover {
+    transform: scale(1.1); 
+    color: #fff;
+}
+
+.listTwo {
+    transition: .8s;
+}
+
+.listTwo:hover{
+    transform: scale(1.1); 
+}
+
+.location {
+    list-style: none;
+    text-align: center;
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .04em;
+    line-height: 1.5em;
+    transition: .8s;
+}
+
+.location a {
+    text-decoration: none;
+    color: #1f0000;
+}
+
+.location:hover {
+    transform: scale(1.1); 
+}
+
+.container_menu {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 30px 0;
+    background-color: #ffffffea;
+}
+
+.center {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #ffffffea;
+    padding-top: 10px;
+}
+
+.flip-card-front img {
+    width: 358px;
+    height: 307px;
+    object-fit: cover;
+}
+/* Здесь обязательно надо добавить высоту и ширину. А последнее значение - для эффекта, как в 3D*/
+.flip-card {
+    background-color: #eeeeede0;
+    width: 360px;
+    height: 310px;
+    border: 1px solid #eeeeede0;
+    perspective: 1000px;  
+}
+/* Этот контейнер нужен для позиционирования переда и обратной стороны фото */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+/* Поворот горизонтальный */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+/* Позиционирования переда и обратной стороны фото на телефоне */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+/* Стиль переда и обратной стороны фото */
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #eeeeed;
+    color: #1f0000;
+    transform: rotateY(180deg);
+}
+
+.dishDiscription {
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .01em;
+    line-height: 1.8em;
+    text-align: center;
+    padding: 20px;
+}
+
+.dishName {
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: .04em;
+    line-height: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color .2s linear;
+}
+
+.dishName:hover {
+color: #00bdbdd8;
+}
+
+.container_fullMenu {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+}
+
+.fullMenu {
+    padding: 13px;
+    background: #1f0000;
+    border: none;
+}
+
+.fullMenu a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: .05em;
+    line-height: 1.5em; 
+    text-transform: uppercase;
+}
+
+#reserve {
+    height: 28vh;
+}
+
+#container_reserve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8d8d8cc;
+    height: 100%;
+}
+
+.prgReservation {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: #1f0000;
+    line-height: 1.7em;
+    text-align: center;
+    }
+
+.reservationButton, .reservationButtonMobile  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    background: radial-gradient(circle, rgba(99,75,210,1) 0%, rgba(49,105,208,1) 40%, rgba(21,136,162,1) 73%, rgba(13,150,133,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border: none;
+    align-self: start;
+}
+
+    .reservationButtonMobile {
+        display: none;
+    }
+
+.container_photo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #d8d8d8cc;
+}
+
+.container_photo img {
+    margin-top: 10px;
+}
+
+.modernApproach {
+    display: flex;
+    justify-content: center;
+    background-color: #d8d8d8cc;
+    height: 25vh;
+}
+
+.modern_par {
+    color: #1f0000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+
+.container_adress {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#container_location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container_home {
+    display: flex;
+    justify-content: center;
+    background-color: #cccccc;
+    height: 8vh;
+}
+
+.home_btn {
+    align-self: center;
+}
+
+.footer {
+    height: 25vh;
+    background-color: #3c342f;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0 0 0 10px;
+}
+
+.container_creator {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-right: auto;
+    flex: 1;
+}
+
+.container_creator a {
+    margin-bottom: 5px;
+}
+
+.container_creator p {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;   
+    font-weight: 300;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.container_time ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+    margin:0;
+}   
+
+.footerStyle {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.item_list {
+    list-style: none;
+}
+
+
+@media all and (max-width:1300px) {
+    .cook {
+        margin-top: 20px;
+        text-align:center;
+    }
+
+    #navbar {
+        height: 7vh;
+    }
+
+    #content {
+        height: 70vh;
+        top: 25px;
+    }
+
+    .georgian, .georgianTwo, .georgianThree {
+        font-size: 60px;
+    }
+
+    .prg {
+        font-size: 22px;
+        margin: 10px 20px;
+    }
+
+    #tbilisi {
+        height: 27vh;
+    }
+
+    #about {
+        height: 45vh;
+    }
+
+    .container_menu {
+        margin: 0 0 30px 0;
+    }
+
+    .center {
+        padding-top: 0;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        height: 24vh;
+    }
+
+    .sakhli {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+        font-size: 13px;
+    }
+
+    .list_mobile {
+        display: block;
+    }
+
+    .sakhli {
+        font-size: 30px;
+    }
+
+    .menu {
+        font-size: 15px;
+        line-height: 0.8em;
+    }
+
+    .georgian, .georgianTwo, .georgianThree {
+        font-size: 27px;
+          line-height: 1em;
+    }
+
+    .georgian {
+        margin-top: 80px;
+    }
+
+    .prg {
+        font-size: 15px;
+        letter-spacing: .01em;
+    }
+  
+  .shef {
+        margin: 40px 0;
+    }
+
+    .shefImage {
+        width: 200px;
+        height: 300px;
+    }
+
+    .cook {
+        text-align:center;
+        font-size: 14px;
+        letter-spacing: .01em;
+        width: 350px;
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    .cafe_par {
+        margin: 0 20px;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .header {
+        font-size: 35px;
+    }
+
+    #contact {
+        height: 100vh;
+    }
+
+    .contactAll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact_inner {
+        padding-top: 0;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .location {
+        margin-right: 5px;
+    }
+
+    .container_menu {
+        margin: 50px 0 30px 0;
+    }
+
+    .flip-card-front img {
+        width: 300px;
+        height: 280px;
+    }
+
+    .flip-card {
+        width: 300px;
+        height: 280px;
+    }
+
+    .dishDiscription {
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 1.5em;
+    }
+
+    .prgReservation {
+        margin-top:20px;
+        font-size: 16px;
+    }
+
+    .reservationButton {
+        display: none;
+    }
+  
+    .reservationButtonMobile {
+        display: block;
+        align-self: center;
+        font-size: 29px;
+    }
+
+    .container_photo img{
+        width: 250px;
+    }
+
+    .modernApproach {
+        height: 33vh;
+    }
+
+    .modern_par {
+        font-size: 15px;
+    }
+
+    .container_creator p {
+        font-size: 12px;
+    }
+
+    .footerStyle {
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 45vh;
+    }
+
+    footer {
+        padding: 0;
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_creator {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width:350px) {
+    #navbar {
+        height: 30vh;
+    }
+  
+    .georgian {
+      margin-top: 120px;
+    }
+  
+      .georgian, .georgianTwo, .georgianThree {
+        font-size: 25px;
+    }
+
+    .cook {
+        width: 310px;
+    }
+
+    #about {
+        height: 120vh;
+    }
+  
+    #reserve {
+        height: 40vh;
+    }
+  
+    .modernApproach {
+        height: 40vh;
+    }
+
+    .footer {
+        height: 47vh;
+    }
+
+    .container_creator {
+        margin-top: 5px;
+    }
+
+}
