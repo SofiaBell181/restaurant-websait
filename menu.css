@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    background-color: rgba(170, 168, 168, 0.3);
+    -webkit-font-smoothing: antialiased; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar {
+    background-color:#3c342f;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sakhli {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: white;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-right: auto;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.sakhli:hover {
+    color: white;
+}
+
+.list_mobile {
+    border: none;
+    background-color: transparent;
+    display: none;
+    margin-top: 5px;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: color .2s linear;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: .1em;
+    line-height: 1em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu:hover {
+    color: #00bdbdd8;
+    } 
+
+#content {
+    background-image: url(menu.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+
+.mission {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+.georgian { 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: 5px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+#inner{
+    position: relative;
+    transition: 2s;
+}
+
+#inner:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 30px 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color: #1f0000;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn {
+    position: absolute;
+}
+
+#back, #backTwo {
+    width: 70px;
+    height: 700px;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+}
+
+#back:hover {
+    opacity: 0.9;
+    background-color: rgba(170, 168, 168, 0.3);
+}
+
+#backTwo:hover {
+    opacity: 0.9;
+    background-color: rgba(170, 168, 168, 0.3);
+}
+
+#next, #nextTwo {
+    width: 70px;
+    height: 700px;
+    right: 1px;
+    z-index: 5;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+}
+
+#next:hover {
+    opacity: 0.9;
+    background-color: rgba(170, 168, 168, 0.3); 
+}
+
+#nextTwo:hover {
+    opacity: 0.9;
+    background-color: rgba(170, 168, 168, 0.3); 
+}
+
+#pictures {
+    width:500px;
+}
+
+#drink_pictures {
+    width: 493px;
+}
+
+.footer {
+    height: 25vh;
+    background-color: #3c342f;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0 0 0 10px;
+}
+
+.container_creator {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-right: auto;
+    flex: 1;
+}
+
+.container_creator a {
+    margin-bottom: 5px;
+}
+
+.container_creator p {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;   
+    font-weight: 300;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.container_time ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}   
+
+.footerStyle {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.item_list {
+    list-style: none;
+}
+
+.container_time ul {
+    padding-left: 0;
+}
+  
+@media all and (max-width:1300px) {
+
+    #navbar {
+        height: 7vh;
+    }
+
+    #content {
+        height: 70vh;
+        top: 25px;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        height: 24vh;
+    }
+
+    .sakhli {
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+        font-size: 13px;
+    }
+
+    .list_mobile {
+        display: block;
+    }
+
+    .sakhli {
+        font-size: 30px;
+    }
+
+    .menu {
+        font-size: 15px;
+        line-height: 0.8em;
+    }
+
+    .georgian {
+        font-size: 80px;
+    }
+
+    .georgian {
+        margin-top: 70px;
+    }
+
+    #pictures {
+        width:300px;
+    }
+    
+    #drink_pictures {
+        width: 293px;
+    }
+
+    #next, #nextTwo {
+        width: 40px;
+        height: 420px;
+    }
+
+    #back, #backTwo {
+        width: 40px;
+        height: 420px;
+    }
+
+    #back img, #backTwo img, #next img, #nextTwo img {
+        width: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .container_creator p {
+        font-size: 12px;
+    }
+
+    .footerStyle {
+        font-size: 11px;
+    }
+
+    .footer {
+        height: 45vh;
+    }
+
+    footer {
+        padding: 0;
+        margin: 0 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_creator {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
+
+}
+
+
+@media all and (max-width:350px) {
+    #navbar {
+        height: 30vh;
+    }
+
+    .footer {
+        height: 50vh;
+    }
+
+    .container_creator {
+        margin-top: 5px;
+    }
+}

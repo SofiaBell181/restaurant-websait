@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MENU</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <link rel="stylesheet" href="menu.css">
+      <link rel="icon" href="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-wine-thanksgiving-justicon-flat-justicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800&display=swap" rel="stylesheet">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="navbar" class="navBar">
+         <nav>
+            <a class="sakhli item">SAKHLI</a><button class="list_mobile"><img src="list-48.png" width="40px" alt=""></button>
+            <a class="menu item" aria-current="page" href="/menu/menu.html">Меню</a>
+            <a class="menu item" href="/index.html">О нас</a>
+            <a class="menu item" href="/reservation/reservation.html">Забронировать</a>
+            <a class="menu item" href="/index.html">Контакты</a>
+         </nav>
+      </div>
+
+      <div id="content">
+         <div class="mission">
+            <h1 class="georgian">Меню</h1>
+         </div>
+      </div>
+
+
+
+      <div id="menu">
+         <div id="inner" data-aos="zoom-in">
+            <h1>— &nbsp; Кухня &nbsp;—</h1>
+            <button id="back" class="btn"><img src="back.png" width="50px" alt=""></button>
+            <button id="next" class="btn"><img src="next.png" width="50px" alt=""></button>
+            <img id="pictures"  src="1.png" alt="Menu">
+         </div>
+
+         <div id="inner" data-aos="zoom-in">
+            <h1>— &nbsp; Напитки &nbsp;—</h1>
+            <button id="backTwo" class="btn"><img src="back.png" width="50px" alt=""></button>
+            <button id="nextTwo" class="btn"><img src="next.png" width="50px" alt=""></button>
+            <img id="drink_pictures"  src="13.png" alt="Menu">
+         </div>
+      </div>
+
+      <div class="footer">
+         <footer>
+            <div class="container_creator">
+               <a href="https://www.instagram.com/soffiabel/" target="_blank"><img src="insta.icon.png" alt="Instagram" width="25px"></a>
+               <p>Creator: Sophia Beloborodtseva</p>
+               <p>© 2021</p>
+            </div>
+  
+            <div class="container_time">
+               <h5 class="map">Локация</h5>
+               <ul>
+                  <li class="item_list"><a class="footerStyle">Пасанури</a></li>
+                  <li class="item_list"><a class="footerStyle">Мцхета-Мтианети, 121</a></li>
+                  <li class="item_list"><a class="footerStyle" href="tel:8 (987)-979-62-70">8 (987)-979-62-70</a></li>
+               </ul>
+            </div>
+            
+            <div class="container_time">
+               <h5>Время работы</h5>
+               <ul>
+                  <li class="footerStyle">Понедельник - четверг</li>
+                  <li class="footerStyle">12:00 - 23:00</li>
+                  <li class="footerStyle">Пятница - воскреснье</li>
+                  <li class="footerStyle">12:00 - 02:00</li>
+               </ul>
+            </div>
+
+         </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="menu.js"></script>
+
+      <script>
+         AOS.init();
+       </script>
+   </body>
+</html>
