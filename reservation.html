@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ORDER</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <link rel="stylesheet" href="reservation.css">
+      <link rel="icon" href="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-wine-thanksgiving-justicon-flat-justicon.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800&display=swap" rel="stylesheet">
+   </head>
+   <body>
+
+      <div id="navbar" class="navBar">
+         <nav>
+            <a class="sakhli item">SAKHLI</a><button class="list_mobile"><img src="list-48.png" width="40px" alt=""></button>
+            <a class="menu item" aria-current="page" href="/menu/menu.html">Меню</a>
+            <a class="menu item" href="/index.html">О нас</a>
+            <a class="menu item" href="/reservation/reservation.html">Забронировать</a>
+            <a class="menu item" href="/index.html">Контакты</a>
+         </nav>
+      </div>
+
+<div id="main">
+   <h1>— &nbsp;Забронировать столик &nbsp;—</h1>
+   <img class="picture" src="https://img.icons8.com/material-outlined/48/000000/reservation-2.png"/>
+   <p class="par">Для вечеринок из шести и более мы рекомендуем бронировать места как минимум за две недели.</p>
+   <p>При посещении гостей мы рассаживаем группы только в порядке очереди.</p>
+   <p>Также вы можете забронировать столик, позвонив по номеру:</p>
+   <a class="telephone" href="tel:8 (987)-979-62-70">8 (987)-979-62-70</a>
+</div>
+      <div class="container_forms">
+         <form>
+            <label>Имя</label>
+            <input type="text" id="nameGuest" placeholder="Имя">
+            <label>Фамилия</label>
+            <input id="surname" type="text" placeholder="Фамилия" >
+            <label>Ваш телефон</label>
+            <input id="tel" type="tel" placeholder="Ваш телефон">
+            <label>Email адрес</label>
+            <input type="email" placeholder="Email адрес">
+            <label>Дата</label>
+            <input id="date" type="date">
+            <label>Количество гостей</label>
+            <input id="guest" type="number" min="1" placeholder="Количество гостей">
+            <label>Комментарий</label>
+            <textarea class="" type="text" placeholder="" ></textarea>
+            <button class="reservedButton">Забронировать</button>
+         </form>
+      </div>
+
+
+      <div class="footer">
+         <footer>
+            <div class="container_creator">
+               <a href="https://www.instagram.com/soffiabel/" target="_blank"><img src="insta.icon.png" alt="Instagram" width="25px"></a>
+               <p>Creator: Sophia Beloborodtseva</p>
+               <p>© 2021</p>
+            </div>
+  
+            <div class="container_time">
+               <h5 class="map">Локация</h5>
+               <ul>
+                  <li class="item_list"><a class="footerStyle">Пасанури</a></li>
+                  <li class="item_list"><a class="footerStyle">Мцхета-Мтианети, 121</a></li>
+                  <li class="item_list"><a class="footerStyle" href="tel:8 (987)-979-62-70">8 (987)-979-62-70</a></li>
+               </ul>
+            </div>
+            
+            <div class="container_time">
+               <h5 class="time">Время работы</h5>
+               <ul>
+                  <li class="footerStyle">Понедельник - четверг</li>
+                  <li class="footerStyle">12:00 - 23:00</li>
+                  <li class="footerStyle">Пятница - воскреснье</li>
+                  <li class="footerStyle">12:00 - 02:00</li>
+               </ul>
+            </div>
+
+         </footer>
+      </div>  
+
+
+      <div id="container-result">
+         <div id="overlay"></div>
+            <div id="modal-window">
+               <p id="par_booking">Заполните все пункты для бронирования</p>
+               <button id="btnAlert">Заполнить</button>
+            </div>
+      </div>
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+      <script src="reservation.js"></script>
+   </body>
+</html>
